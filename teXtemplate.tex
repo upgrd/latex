@@ -1,7 +1,19 @@
 % template for thesis/paper
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%* cheat sheet ***
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+% \autocite[Verweistext][Seiten]{NAME}
+% \nocite
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~
 % *** header ***
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \documentclass[a4paper, 12pt]{scrartcl}
 \usepackage[utf8]{inputenc}
+\usepackage[babel,german=quotes]{csquotes}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{}
 \usepackage[T1]{fontenc}
 % 11/2 spacing
 \usepackage{setspace}
@@ -20,8 +32,13 @@
 % syntax theorem: ({}[take external numbering]{})
 \newtheorem{abb}{Abb.}
 % syntax enviroment: \newenviroment{Name}[Zahl][Vorbelegung]{Startbefehl}{Endbefehl}; ev. + let
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% *** document section ***
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \begin{document}
-% *** Titelei ***
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% *** title section ***
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %\begin{comment}
 \titlehead{Angaben zur LV}
 \subject{fakultative Angabe}
@@ -30,11 +47,22 @@
 \date{2016}
 \maketitle
 %\end{comment}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% *** TOC ***
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \pagebreak
 \tableofcontents
 \pagebreak
 \pagenumbering{arabic}
 \setcounter{page}{3}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% *** text section ***
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \section{Beginn}
 Das ist ein l\"atex Dokument.
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% *** bib section ***
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\printbibliography{}
 \end{document}
