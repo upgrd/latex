@@ -1,0 +1,17 @@
+[0] Config.pm:321> INFO - This is Biber 1.9
+[0] Config.pm:324> INFO - Logfile is 'teXtemplate.blg'
+[34] biber:277> INFO - === Mon Nov 21, 2016, 16:51:52
+[35] Biber.pm:334> INFO - Reading 'teXtemplate.bcf'
+[107] Biber.pm:636> INFO - Found 1 citekeys in bib section 0
+[125] Biber.pm:3052> INFO - Processing section 0
+[146] Biber.pm:3190> INFO - Looking for bibtex format file '~/latex/bibdb.bib' for section 0
+[231] bibtex.pm:979> INFO - Decoding LaTeX character macros into UTF-8
+[234] bibtex.pm:853> INFO - Found BibTeX data source '/home/upgrd/latex/bibdb.bib'
+[236] Utils.pm:144> WARN - BibTeX subsystem: /tmp/w3QU7gMmrg/bibdb.bib_27755.utf8, line 258, warning: 4720 characters of junk seen at toplevel
+[254] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[254] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[254] Biber.pm:2929> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[254] Biber.pm:2933> INFO - No sort tailoring available for locale 'de-DE'
+[256] bbl.pm:517> INFO - Writing 'teXtemplate.bbl' with encoding 'UTF-8'
+[257] bbl.pm:606> INFO - Output to teXtemplate.bbl
+[257] Biber.pm:107> INFO - WARNINGS: 1
