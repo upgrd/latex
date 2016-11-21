@@ -1,0 +1,40 @@
+% template for thesis/paper
+% *** header ***
+\documentclass[a4paper, 12pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% 11/2 spacing
+\usepackage{setspace}
+\onehalfspacing{}
+% no pagenumbering (set numbering with setcounter!)
+\pagenumbering{gobble}
+% verbatim package for comment-enviroment
+\usepackage{verbatim}
+% url package; use with \url{www.google.com} or \path{path/to/whatever}:
+\usepackage{url}
+% format for auto-generated elements (UKenglish)
+\usepackage[ngerman]{babel}
+% \hyphenation{Nach-mit-tag}; \mbox{wort}
+% *** custom commands/theorems/enviroments *** 
+% syntax command: \newcommand{\customcommand}[1]{\somecommand{#1}} -> \customcommand{einWort}
+% syntax theorem: ({}[take external numbering]{})
+\newtheorem{abb}{Abb.}
+% syntax enviroment: \newenviroment{Name}[Zahl][Vorbelegung]{Startbefehl}{Endbefehl}; ev. + let
+\begin{document}
+% *** Titelei ***
+%\begin{comment}
+\titlehead{Angaben zur LV}
+\subject{fakultative Angabe}
+\title{Titel title}
+\author{firstname secondname} %\and
+\date{2016}
+\maketitle
+%\end{comment}
+\pagebreak
+\tableofcontents
+\pagebreak
+\pagenumbering{arabic}
+\setcounter{page}{3}
+\section{Beginn}
+Das ist ein l\"atex Dokument.
+\end{document}
